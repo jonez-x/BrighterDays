@@ -1,0 +1,56 @@
+.App {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(100,43,115,1) 0%, rgba(4,0,4,1) 90% );
+}
+
+.App h1 {
+  font-family: "PlayFair";
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 5px 5px 5px #111111;
+}
+
+.App h4{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   text-shadow: 3px 3px 3px #111111;
+}
+
+.glass-button {
+   margin-top: 20px;
+   padding: 15px 25px;
+   border: none;
+   background-color: rgba(255, 255, 255, 0.15); /* Weniger Transparenz für einen milchigeren Effekt */
+   backdrop-filter: blur(2px); /* Weichzeichnung des Hintergrunds, reduziert für einen subtileren Effekt */
+   border-radius: 10px; /* Abgerundete Ecken */
+   color: #ffffff; /* Weiße Schriftfarbe */
+   font-size: 20px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: normal;
+   text-decoration: none; /* Keine Unterstreichung für Links */
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Schatten für 3D-Effekt */
+   transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Animationen für Interaktionen */
+ }
+ 
+ .glass-button:hover {
+   background-color: rgba(255, 255, 255, 0.4); /* Etwas weniger Transparenz beim Hover */
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Größerer Schatten beim Hover */
+   transform: translateY(-2px); /* Leichtes Anheben beim Hover */
+ }
+ 
+ .glass-button:active {
+   transform: translateY(1px); /* Leichtes Absenken beim Klicken */
+   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Kleinerer Schatten beim Klicken */
+ }
+ 
+
+.App .centerContainer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
