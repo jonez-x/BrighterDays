@@ -6,6 +6,7 @@ const supabase = createClient('https://nspliykjvdenjjunptiu.supabase.co', proces
 
 
 function App() {
+  console.log(process.env.SUPABASE_KEY)
   const [spruch, setSpruch] = useState([]);
 
   useEffect(() => {
