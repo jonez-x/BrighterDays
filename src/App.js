@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import { createClient } from '@supabase/supabase-js'
 
-const supabase = createClient('https://nspliykjvdenjjunptiu.supabase.co', process.env.SUPABASE_KEY)
+const supabase = createClient('https://nspliykjvdenjjunptiu.supabase.co', process.env.REACT_APP_SUPABASE_KEY)
 
 
 function App() {
